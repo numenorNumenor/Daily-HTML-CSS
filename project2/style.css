@@ -1,0 +1,143 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Dark_Blue_2: hsl(213, 18%, 22%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+    --Darker_Blue: hsl(212, 25%, 12%);
+    --font: "Overpass", sans-serif;
+}
+  
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: var(--Very_Dark_Blue);
+    height: 100vh;
+}
+
+.card__rating_side,.card__rated_side {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 41.2rem;
+    min-height: 41.6rem;
+    background: radial-gradient(var(--Dark_Blue) 0%, var(--Darker_Blue) 100%);
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+.card__rated_side {
+    align-items: center;
+}
+
+.card--active--side {
+    display: flex;
+}
+
+.img--circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 4.8rem;
+    height: 4.8rem;
+    background-color: var(--Dark_Blue);
+    border-radius: 50%;
+}
+
+.img--circle img {
+    max-width: 1.6rem;
+}
+
+.card__rated_side img {
+    max-width: 16.2rem;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    color: var(--White);
+    font-size: 2.8rem;
+    line-height: 3.545rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.card_rated__headline  {
+    text-align: center;
+}
+
+p {
+    color: var(--Light_Grey);
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.card_rated__lead {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card_rating__rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_rating__rating > div {
+    background-color: var(--Dark_Blue);
+    width: 5.1rem;
+    height: 5.1rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5.3rem;
+    color: var(--Light_Grey);
+    font-weight: 700;
+    font-size: 1.6rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.card_rating__rating > div:hover {
+    background-color: var(--Light_Grey);
+    color: var(--White);
+}
+
+.card_rating__rating > div.card__rate--selected {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.card_rating__submit {
+    background-color: var(--Orange);
+    line-height: 4.7rem;
+    text-align: center;
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.card_rating__submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+small {
+    background-color: var(--Dark_Blue_2);
+    font-size: 1.5rem;
+    padding: 1.2rem 1.7rem 1rem 1.7rem;
+    font-weight: 400;
+    border-radius: 3rem;
+    color: var(--Orange);
+    margin-bottom: 3rem;
+}
