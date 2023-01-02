@@ -1,0 +1,265 @@
+:root {
+    --font: 'Space Grotesk', sans-serif;   
+    --background: #151515;
+    --primary_color: #4EE1A0;
+    --font_color: #D9D9D9;
+    --white: #ffffff;
+}
+  
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--background);
+    color: var(--white);
+    padding: 2rem 4rem 2rem;
+}
+
+/* GENERAL */
+
+.btn,input[type='submit'] {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    letter-spacing: 2.28571px;
+    border-bottom: .2rem solid var(--primary_color);
+    text-transform: uppercase;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 52%;
+    margin: 0 auto 4rem auto;
+    background: linear-gradient(180deg, rgba(36, 36, 36, 0.0001) 0.65%, #242424 100%);
+}
+
+.nav__logo {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.333333px;
+    padding: 2rem 0;
+}
+
+.nav__social_icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SECTION JUMBOTRON */
+
+.jumbotron {
+    text-align: center;
+    padding-bottom: 9rem;
+    border-bottom: 1px solid var(--font_color);
+}
+
+.jumbotron__main_headline {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.0rem;
+    line-height: 4.0rem;
+    letter-spacing: -1.13636px;
+    margin-bottom: 3.5rem;
+}
+
+.main_headline--special {
+    border-bottom: .4rem solid var(--primary_color);
+}
+
+.jumbotron__profile_pic {
+    display: none;
+}
+
+.jumbotron__lead {
+    color: var(--font_color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 2.5rem;
+}
+
+/* SECTION SKILLSET */
+
+.skillset {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,34.5rem));
+    justify-content: center;
+    row-gap: 2.5rem;
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--font_color);
+    margin-bottom: 9rem;
+}
+
+.skill__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+    letter-spacing: -1px;
+}
+
+.skill__ex {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--font_color);
+}
+
+/* SECTION PROJECTS */
+
+.projects {
+    margin-bottom: 6rem;
+}
+
+.projects__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+figure:not(figure:last-of-type) {
+    margin-bottom: 4rem;
+}
+
+figcaption button:first-of-type {
+    margin-right: 2rem;
+}
+
+.projects_container__project img {
+    margin-bottom: 2rem;
+}
+
+.projects_container__project h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.projects__tags {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    margin-right: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: var(--font_color);
+}
+
+.projects__tags .tag:last-of-type {
+    margin-right: 0;
+}
+
+/* SECTION CONTACT */
+
+.contact {
+    padding-bottom: 9rem;
+    border-bottom: 1px solid var(--font_color);
+}
+
+.contact__title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact__p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--font_color);
+    margin-bottom: 5rem;
+}
+
+/* FORM */
+
+form {
+    text-align: right;
+}
+
+input[type='text'],input[type='email'],textarea {
+    font-family: var(--font);
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.222222px;
+    color: var(--White);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-bottom: 1px solid var(--font_color);
+    padding: 2.5rem 0;
+    text-align: left;
+}
+
+#message {
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin: 4rem auto 6rem auto;
+}
+
+.footer__logo_container {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.333333px;
+    padding: 2rem 0;
+}
+
+.footer__social_icons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 52%;
+    margin: 0 auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+    .skillset {
+        justify-content: start;
+        text-align: left;
+    }
+}
+
+
+
