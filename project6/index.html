@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="block--padding block--max_width">
         <nav>
             <div class="nav__logo_container">
                 <a class="nav__logo" href="#">MartinOndras</a>
@@ -43,41 +43,43 @@
         </section>
     </header>
 
-    <section class="skillset">
+    <div class="block--padding block--max_width">
+        <section class="skillset">
+    
+            <div class="skillset__skill">
+                <h3 class="skill__name">HTML</h3>
+                <p class="skill__ex">2 years expierience</p>
+            </div>
+            
+            <div class="skillset__skill">
+                <h3 class="skill__name">CSS</h3>
+                <p class="skill__ex">2 years expierience</p>
+            </div>
+    
+            <div class="skillset__skill">
+                <h3 class="skill__name">Javascript</h3>
+                <p class="skill__ex">1 year expierience</p>
+            </div>
+    
+            <div class="skillset__skill">
+                <h3 class="skill__name">Python</h3>
+                <p class="skill__ex">1 year expierience</p>
+            </div>
+    
+            <div class="skillset__skill">
+                <h3 class="skill__name">SQL</h3>
+                <p class="skill__ex">1 year expierience</p>
+            </div>
+    
+            <div class="skillset__skill">
+                <h3 class="skill__name">PowerBI</h3>
+                <p class="skill__ex">1 year expierience</p>
+            </div>
+    
+        </section>
+    </div>
 
-        <div class="skillset__skill">
-            <h3 class="skill__name">HTML</h3>
-            <p class="skill__ex">2 years expierience</p>
-        </div>
-        
-        <div class="skillset__skill">
-            <h3 class="skill__name">CSS</h3>
-            <p class="skill__ex">2 years expierience</p>
-        </div>
-
-        <div class="skillset__skill">
-            <h3 class="skill__name">Javascript</h3>
-            <p class="skill__ex">1 year expierience</p>
-        </div>
-
-        <div class="skillset__skill">
-            <h3 class="skill__name">Python</h3>
-            <p class="skill__ex">1 year expierience</p>
-        </div>
-
-        <div class="skillset__skill">
-            <h3 class="skill__name">SQL</h3>
-            <p class="skill__ex">1 year expierience</p>
-        </div>
-
-        <div class="skillset__skill">
-            <h3 class="skill__name">PowerBI</h3>
-            <p class="skill__ex">1 year expierience</p>
-        </div>
-
-    </section>
-
-    <section class="projects">
+    <section class="projects block--padding block--max_width">
         
         <div class="projects__header">
             <h2 class="projects__title title">Projects</h2>
@@ -172,32 +174,34 @@
         </div>
     </section>
 
-    <section class="contact">
-        <h2 class="contact__title title">Contact</h2>
-        <p class="contact__p">
-            I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
-        </p>
-
-        <form>
-            <input type="text" name="client_name" id="name" value="NAME">
-            <input type="email" name="client_email" id="email" value="EMAIL">
-            <textarea name="client_message" id="message" cols="30" rows="3">MESSAGE</textarea>
-            <input type="submit" value="SEND MESSAGE">
-        </form>
-    </section>
-
-    <footer>
-        <div class="footer__logo_container">
-            <li><a class="footer__logo" href="#">MartinOndras</a></li>
-        </div>
-
-        <div class="footer__social_icons">
-            <li><a class="footer__social_icon icon--github" href="#"><img src="./images/icon-github.svg" alt="Github icon"></a></li>
-            <li><a class="footer__social_icon icon--google" href="#"><img src="./images/icon-frontend-mentor.svg" alt="Frontend-mentor icon"></a></li>
-            <li><a class="footer__social_icon icon--linkedin" href="#"><img src="./images/icon-linkedin.svg" alt="Linkedin icon"></a></li>
-            <li><a class="footer__social_icon icon--twitter" href="#"><img src="./images/icon-twitter.svg" alt="Twitter icon"></a></li>  
-        </div>   
-    </footer>
+    <div class="contact_footer--bg block--padding">
+        <section class="contact block--max_width block--padding">
+            <h2 class="contact__title title">Contact</h2>
+            <p class="contact__p">
+                I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+            </p>
+    
+            <form>
+                <input type="text" name="client_name" id="name" value="NAME">
+                <input type="email" name="client_email" id="email" value="EMAIL">
+                <textarea name="client_message" id="message" cols="30" rows="3">MESSAGE</textarea>
+                <input type="submit" value="SEND MESSAGE">
+            </form>
+        </section>
+    
+        <footer>
+            <div class="footer__logo_container">
+                <li><a class="footer__logo" href="#">MartinOndras</a></li>
+            </div>
+    
+            <div class="footer__social_icons">
+                <li><a class="footer__social_icon icon--github" href="#"><img src="./images/icon-github.svg" alt="Github icon"></a></li>
+                <li><a class="footer__social_icon icon--google" href="#"><img src="./images/icon-frontend-mentor.svg" alt="Frontend-mentor icon"></a></li>
+                <li><a class="footer__social_icon icon--linkedin" href="#"><img src="./images/icon-linkedin.svg" alt="Linkedin icon"></a></li>
+                <li><a class="footer__social_icon icon--twitter" href="#"><img src="./images/icon-twitter.svg" alt="Twitter icon"></a></li>  
+            </div>   
+        </footer>
+    </div>
     
     <script src="./app.js"></script>
 </body>
